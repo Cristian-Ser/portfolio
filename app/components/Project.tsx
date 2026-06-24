@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { FaGithub } from "react-icons/fa";
 
 function Project() {
   const projectTec = [
@@ -23,7 +24,7 @@ function Project() {
         </div>
         <div>
           {/* Project image */}
-          <Link href='https://cash-well.vercel.app/' target="_blank">
+          <Link href="https://cash-well.vercel.app/" target="_blank">
             <picture>
               <img
                 src="/CashWell-landing-desktop.png"
@@ -33,8 +34,24 @@ function Project() {
             </picture>
           </Link>
           {/* Project description */}
-          <div className="flex flex-col gap-2 p-4">
+          <div className="flex flex-col gap-2 py-4">
+            {/* Title */}
             <h3 className="text-xl font-black">CashWell</h3>
+
+            <div className="flex gap-2 items-center">
+              <Link
+                href="https://cash-well.vercel.app/"
+                target="_blank"
+                className="py-2 px-4 text-xs font-semibold bg-black text-white rounded-lg cursor-pointer hover:-translate-y-0.5 duration-300"
+              >
+                Go to project
+              </Link>
+              {/* GitHub link */}
+              <Link href="https://github.com/Elix-lab" target="_blank">
+                <FaGithub className="size-5" />
+              </Link>
+            </div>
+            {/* Description */}
             <p>
               A personal finance application designed to make tracking income
               and expenses simple, fast, and intuitive.
