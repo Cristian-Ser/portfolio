@@ -45,10 +45,6 @@ function Project() {
               transaction management, optimistic updates, database integration,
               and deployment, gaining hands-on experience across both frontend
               and backend development.
-              <br />
-              Built with 'React', 'Next.js', 'TypeScript', 'TanStack Query','
-              Next.js Server Actions', 'Auth.js', 'Drizzle ORM', 'SQL',
-              'Supabase', and 'Vercel'.
             </p>
             <span className="text-sm font-bold">Built with:</span>
             <ul className="flex gap-2 flex-wrap">
