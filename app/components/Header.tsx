@@ -20,7 +20,7 @@ function Header() {
             </li>
             {/* Project */}
             <li>
-              <button className="cursor-pointer" onClick={() => handleScroll("")}>Project</button>
+              <button className="cursor-pointer" onClick={() => handleScroll("project")}>Project</button>
             </li>
             {/* About */}
             <li>

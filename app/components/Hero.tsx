@@ -1,8 +1,12 @@
-'use client'
+"use client";
 import Link from "next/link";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 function Hero() {
+  const scrollToProject = () => {
+    document.getElementById("project")?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <section className="relative overflow-hidden border-b">
       {/* Blured background */}
@@ -22,8 +26,11 @@ function Hero() {
         </div>
         {/* Buttons-Links */}
         <div className="flex items-center justify-start gap-3">
-            {/* Project */}
-          <button className="px-6 py-3 bg-black text-white rounded-lg cursor-pointer hover:-translate-y-0.5 duration-300">
+          {/* Project */}
+          <button
+            className="px-6 py-3 bg-black text-white rounded-lg cursor-pointer hover:-translate-y-0.5 duration-300"
+            onClick={scrollToProject}
+          >
             View Project
           </button>
           {/* GitHub */}

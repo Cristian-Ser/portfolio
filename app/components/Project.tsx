@@ -15,7 +15,7 @@ function Project() {
     "Vercel",
   ];
   return (
-    <section id="skills" className="relative border-b overflow-hidden">
+    <section id="project" className="relative border-b overflow-hidden scroll-mt-14">
       <div className="flex flex-col justify-center gap-5 max-w-3xl mx-auto px-4 py-10 min-h-100">
         {/* Text */}
         <div>
