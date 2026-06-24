@@ -39,7 +39,7 @@ function Hero() {
           </Link>
           {/* Linkedin */}
           <Link
-            href="https://www.linkedin.com/in/cristian-serr%C3%B3n-236443275/"
+            href="https://www.linkedin.com/in/cristian-serr%C3%B3n/"
             target="_blank"
           >
             <FaLinkedin className="size-5" />

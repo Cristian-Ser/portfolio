@@ -1,0 +1,61 @@
+"use client";
+
+import { IoMdMail } from "react-icons/io";
+import { FaRegCopy } from "react-icons/fa6";
+import { FaExternalLinkAlt, FaLinkedin } from "react-icons/fa";
+
+import Link from "next/link";
+
+function Contact() {
+  const copyText = () => {
+    return navigator.clipboard.writeText("cristian99ser@gmail.com");
+  };
+  return (
+    <section
+      id="skills"
+      className="relative border-b overflow-hidden scroll-mt-14"
+    >
+      <div className="flex flex-col justify-center gap-5 max-w-3xl mx-auto px-4 py-10 min-h-100">
+        {/* Text */}
+        <div>
+          <span className="text-base font-bold text-gray-500">CONTACT</span>
+          <h2 className="text-2xl font-black">Always open to connect</h2>
+        </div>
+        <div className="grid grid-cols-2 gap-3">
+          {/* mail */}
+          <div className="flex flex-col gap-3 p-4 border rounded-lg">
+            {/* icons */}
+            <div className="grid grid-cols-2">
+              <IoMdMail className="size-6" />
+              <button onClick={copyText} title="Copy" className="justify-self-end cursor-pointer">
+                <FaRegCopy className="size-6" />
+              </button>
+            </div>
+            {/* text */}
+            <div className="flex flex-col items-start">
+              <span className="text-sm font-semibold">Email</span>
+              <p>cristian99ser@gmail.com</p>
+            </div>
+          </div>
+          {/* linkedin */}
+          <div className="flex flex-col gap-3 p-4 border rounded-lg">
+            {/* icons */}
+            <div className="grid grid-cols-2">
+              <FaLinkedin className="size-6" />
+              <Link href="https://www.linkedin.com/in/cristian-serr%C3%B3n/" target="_blank" className="justify-self-end">
+                <FaExternalLinkAlt className="size-5" />
+              </Link>
+            </div>
+            {/* text */}
+            <div className="flex flex-col items-start">
+              <span className="text-sm font-semibold">Linkedin</span>
+              <p>https://www.linkedin.com/in/cristian-serr%C3%B3n/</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export default Contact;
