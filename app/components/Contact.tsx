@@ -12,7 +12,7 @@ function Contact() {
   };
   return (
     <section
-      id="skills"
+      id="contact"
       className="relative border-b overflow-hidden scroll-mt-14"
     >
       <div className="flex flex-col justify-center gap-5 max-w-3xl mx-auto px-4 py-10 min-h-100">
@@ -28,7 +28,7 @@ function Contact() {
             <div className="grid grid-cols-2">
               <IoMdMail className="size-6" />
               <button onClick={copyText} title="Copy" className="justify-self-end cursor-pointer">
-                <FaRegCopy className="size-6" />
+                <FaRegCopy className="size-6 active:size-5 duration-75" />
               </button>
             </div>
             {/* text */}
