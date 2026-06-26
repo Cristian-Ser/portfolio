@@ -22,8 +22,8 @@ function Contact() {
           <h2 className="text-2xl font-black">Always open to connect</h2>
         </div>
         <div className="grid grid-cols-2 gap-3">
-          {/* mail */}
-          <div className="flex flex-col gap-3 p-4 border rounded-lg">
+          {/* MAIL */}
+          <div className="flex flex-col gap-3 p-4 border rounded-lg overflow-hidden">
             {/* icons */}
             <div className="grid grid-cols-2">
               <IoMdMail className="size-6" />
@@ -34,22 +34,22 @@ function Contact() {
             {/* text */}
             <div className="flex flex-col items-start">
               <span className="text-sm font-semibold">Email</span>
-              <p>cristian99ser@gmail.com</p>
+              <p className="break-all">cristian99ser@gmail.com</p>
             </div>
           </div>
-          {/* linkedin */}
+          {/* LINKEDIN */}
           <div className="flex flex-col gap-3 p-4 border rounded-lg">
             {/* icons */}
             <div className="grid grid-cols-2">
               <FaLinkedin className="size-6" />
-              <Link href="https://www.linkedin.com/in/cristian-serr%C3%B3n/" target="_blank" className="justify-self-end">
+              <Link href="https://www.linkedin.com/in/cristian-serr%C3%B3n/" target="_blank" className="justify-self-end" title="Go to linkedin">
                 <FaExternalLinkAlt className="size-5" />
               </Link>
             </div>
             {/* text */}
             <div className="flex flex-col items-start">
               <span className="text-sm font-semibold">Linkedin</span>
-              <p>https://www.linkedin.com/in/cristian-serr%C3%B3n/</p>
+              <p className="break-all">https://www.linkedin.com/in/cristian-serr%C3%B3n/</p>
             </div>
           </div>
         </div>

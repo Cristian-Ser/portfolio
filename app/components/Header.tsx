@@ -18,8 +18,8 @@ function Header() {
           CS
         </button>
         {/* Nav */}
-        <nav>
-          <ul className="col-start-2 gap-2 flex justify-center">
+        <nav className="hidden sm:block">
+          <ul className="col-start-2 gap-2 flex justify-center items-center text-sm font-semibold text-gray-400 *:hover:text-gray-600 *:hover:duration-300">
             <li>
               <button
                 className="cursor-pointer"

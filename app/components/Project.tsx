@@ -47,7 +47,7 @@ function Project() {
                 Go to project
               </Link>
               {/* GitHub link */}
-              <Link href="https://github.com/Elix-lab" target="_blank">
+              <Link href="https://github.com/Elix-lab/finance-app/tree/main" title="Project repository" target="_blank">
                 <FaGithub className="size-5" />
               </Link>
             </div>
