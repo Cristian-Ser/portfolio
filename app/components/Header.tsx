@@ -8,7 +8,7 @@ function Header() {
     return window.scrollTo({ top: 0, behavior: "smooth" });
   };
   return (
-    <header className="z-100 sticky top-0 bg-white/80 backdrop-blur-3xl border-b">
+    <header className="z-100 sticky top-0 bg-background/80 backdrop-blur-3xl border-b">
       <div className="grid grid-col-3 max-w-3xl mx-auto p-4 items-center">
         {/* logo */}
         <button
@@ -19,7 +19,7 @@ function Header() {
         </button>
         {/* Nav */}
         <nav className="hidden sm:block">
-          <ul className="col-start-2 gap-2 flex justify-center items-center text-sm font-semibold text-gray-400 *:hover:text-gray-600 *:hover:duration-300">
+          <ul className="col-start-2 gap-2 flex justify-center items-center text-sm font-semibold text-gray-400 *:hover:text-gray-600 dark:*:hover:text-white/80 *:hover:duration-300">
             <li>
               <button
                 className="cursor-pointer"
@@ -49,7 +49,7 @@ function Header() {
           </ul>
         </nav>
         {/* get in touch */}
-        <button className="col-start-3 justify-self-end py-2 px-3 bg-black text-white rounded-lg cursor-pointer hover:-translate-y-0.5 duration-300 text-sm font-semibold" onClick={() => handleScroll('contact')}>
+        <button className="col-start-3 justify-self-end py-2 px-3 bg-accent text-white rounded-lg cursor-pointer hover:-translate-y-0.5 duration-300 text-sm font-semibold" onClick={() => handleScroll('contact')}>
           Get in touch
         </button>
       </div>

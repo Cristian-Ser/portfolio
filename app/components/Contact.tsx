@@ -21,7 +21,7 @@ function Contact() {
           <span className="text-base font-bold text-gray-500">CONTACT</span>
           <h2 className="text-2xl font-black">Always open to connect</h2>
         </div>
-        <div className="grid grid-cols-2 gap-3">
+        <div className="flex flex-col sm:grid sm:grid-cols-2 gap-3">
           {/* MAIL */}
           <div className="flex flex-col gap-3 p-4 border rounded-lg overflow-hidden">
             {/* icons */}

@@ -40,7 +40,7 @@ function Skills() {
         {/* Skill blocks */}
         <div>
           {/* Categories */}
-          <ul className="grid grid-cols-2 gap-3">
+          <ul className="flex flex-col sm:grid sm:grid-cols-2 gap-3">
             {skills.map((skill) => (
               <li
                 key={skill.category}
@@ -54,7 +54,7 @@ function Skills() {
                   {skill.technologies.map((tec) => (
                     <li
                       key={tec}
-                      className="text-sm border p-2 rounded-lg bg-gray-50 hover:-translate-y-0.5 duration-300 cursor-default"
+                      className="text-sm border p-2 rounded-lg bg-accent/10 hover:-translate-y-0.5 duration-300 cursor-default"
                     >
                       {tec}
                     </li>

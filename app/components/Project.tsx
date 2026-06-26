@@ -42,7 +42,7 @@ function Project() {
               <Link
                 href="https://cash-well.vercel.app/"
                 target="_blank"
-                className="py-2 px-4 text-xs font-semibold bg-black text-white rounded-lg cursor-pointer hover:-translate-y-0.5 duration-300"
+                className="py-2 px-4 text-xs font-semibold bg-accent text-white rounded-lg cursor-pointer hover:-translate-y-0.5 duration-300"
               >
                 Go to project
               </Link>
@@ -68,7 +68,7 @@ function Project() {
               {projectTec.map((tec) => (
                 <li
                   key={tec}
-                  className="text-sm border p-2 rounded-lg bg-gray-50 hover:-translate-y-0.5 duration-300 cursor-default"
+                  className="text-sm border p-2 rounded-lg bg-accent/10 hover:-translate-y-0.5 duration-300 cursor-default"
                 >
                   {tec}
                 </li>
