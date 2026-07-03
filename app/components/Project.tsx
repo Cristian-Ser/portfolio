@@ -36,7 +36,7 @@ function Project() {
           {/* Project description */}
           <div className="flex flex-col gap-2 py-4">
             {/* Title */}
-            <h3 className="text-xl font-black">CashWell</h3>
+            <h3 className="text-xl font-black">CashWell <span className="text-sm">(2026-present)</span></h3>
 
             <div className="flex gap-2 items-center">
               <Link
