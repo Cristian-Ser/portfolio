@@ -23,7 +23,7 @@ function Hero() {
             experience while expanding my knowledge of backend development and
             modern web technologies.
           </p>
-          <p><span className="font-bold">🌎 Languages I speak:</span> Spanish(Native) & English</p>
+          <p className="text-sm"><span className="font-bold">🌎 Languages I speak:</span> Spanish(Native) & English</p>
         </div>
         {/* Buttons-Links */}
         <div className="flex items-center justify-start gap-3">
