@@ -15,7 +15,7 @@ function Skills() {
       category: "Backend",
       technologies: [
         "Next.js Server Actions",
-        "API Routes",
+        "Next.js API Routes",
         "Authentication (Auth.js)",
       ],
     },
