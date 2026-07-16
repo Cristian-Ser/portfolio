@@ -17,13 +17,13 @@ function Hero() {
         {/* Text */}
         <div className="flex flex-col gap-2">
           <h1 className="text-6xl font-black">Cristian Serrón</h1>
-          <p className="text-xl font-bold">(Next.js/React)</p>
+          <p className="text-xl font-semibold">(Next.js/React)</p>
           <p className="text-balance">
             I build web applications with React and Next.js, focusing on frontend and user
             experience while expanding my knowledge of backend development and
             modern web technologies.
           </p>
-          <p className="text-sm"><span className="font-bold">🌎 Languages I speak:</span> Spanish(Native) & English</p>
+          <p className="text-sm"><span className="font-semibold">🌎 Languages I speak:</span> Spanish(Native) & English</p>
         </div>
         {/* Buttons-Links */}
         <div className="flex items-center justify-start gap-3">

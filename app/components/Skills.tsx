@@ -6,7 +6,7 @@ function Skills() {
       technologies: [
         "React",
         "Next.js",
-        "Typedscript",
+        "TypeScript",
         "JavaScript",
         "Tailwind",
       ],
