@@ -27,7 +27,7 @@ function Project() {
           <Link href="https://cash-well.vercel.app/" target="_blank">
             <picture>
               <img
-                src="/CashWell-landing-desktop.png"
+                src="/CashWell-landing.png"
                 alt="CashWell desktop landing page"
                 className="border rounded-lg hover:-translate-y-0.5 duration-300"
               />
