@@ -10,7 +10,7 @@ function Hero() {
   return (
     <section className="relative overflow-hidden border-b">
       {/* Blured background */}
-      <div className="-z-10 absolute min-h-80 w-3xl top-0 -translate-1/2 left-1/2 -translate-x-1/2 blur-3xl rounded-full  bg-accent/20"></div>
+      <div className="-z-10 hidden absolute dark:block min-h-80 w-3xl top-0 -translate-1/2 left-1/2 -translate-x-1/2 blur-3xl rounded-full bg-accent/20"></div>
 
       {/* Content */}
       <div className="flex flex-col justify-center gap-10 max-w-3xl mx-auto p-4 py-10 min-h-100">
@@ -40,7 +40,7 @@ function Hero() {
           </Link>
           {/* Linkedin */}
           <Link
-            href="https://www.linkedin.com/in/cristian-serr%C3%B3n/"
+            href="https://www.linkedin.com/in/cristian-ser/"
             target="_blank"
           >
             <FaLinkedin className="size-5" />

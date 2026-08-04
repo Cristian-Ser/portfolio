@@ -42,14 +42,14 @@ function Contact() {
             {/* icons */}
             <div className="grid grid-cols-2">
               <FaLinkedin className="size-6" />
-              <Link href="https://www.linkedin.com/in/cristian-serr%C3%B3n/" target="_blank" className="justify-self-end" title="Go to linkedin">
+              <Link href="https://www.linkedin.com/in/cristian-ser/" target="_blank" className="justify-self-end" title="Go to linkedin">
                 <FaExternalLinkAlt className="size-5" />
               </Link>
             </div>
             {/* text */}
             <div className="flex flex-col items-start">
               <span className="text-sm font-semibold">Linkedin</span>
-              <p className="break-all">https://www.linkedin.com/in/cristian-serr%C3%B3n/</p>
+              <p className="break-all">www.linkedin.com/in/cristian-ser</p>
             </div>
           </div>
         </div>
