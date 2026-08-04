@@ -69,6 +69,7 @@ function Project() {
                 <li
                   key={tec}
                   className="text-sm border p-2 rounded-lg bg-accent/10 hover:-translate-y-0.5 duration-300 cursor-default"
+                  translate="no"
                 >
                   {tec}
                 </li>
