@@ -38,7 +38,7 @@ const projects = [
       alt: "FlashMind desktop dashboard",
     },
     title: "FlashMind",
-    timePeriod: "2026-in development",
+    timePeriod: "2026",
     gitHub: "https://github.com/Elix-lab/flashcards-app",
     description: {
       en: "A flashcard application designed to make learning and reviewing new concepts simple, organized, and effective.\nThis project was built as an opportunity to strengthen my React fundamentals and learn how to build a complete application without relying on Next.js. I implemented client-side routing with React Router, built the backend with Node.js and Express, and integrated MongoDB with Mongoose for data persistence. Along the way, I worked with CRUD operations, API integration, and form handling, gaining hands-on experience building and connecting a frontend and backend from scratch.",
