@@ -5,8 +5,11 @@ import { FaRegCopy } from "react-icons/fa6";
 import { FaExternalLinkAlt, FaLinkedin } from "react-icons/fa";
 
 import Link from "next/link";
+import { useLanguage } from "./LanguageProvider";
 
 function Contact() {
+  const { locale } = useLanguage();
+
   const copyText = () => {
     return navigator.clipboard.writeText("cristian99ser@gmail.com");
   };
@@ -18,8 +21,14 @@ function Contact() {
       <div className="flex flex-col justify-center gap-5 max-w-3xl mx-auto px-4 py-10 min-h-100">
         {/* Text */}
         <div>
-          <span className="text-base font-bold text-gray-500">CONTACT</span>
-          <h2 className="text-2xl font-black">Always open to connect</h2>
+          <span className="text-base font-bold text-gray-500">
+            {locale === "en" ? "CONTACT" : "CONTACTO"}
+          </span>
+          <h2 className="text-2xl font-black">
+            {locale === "en"
+              ? "Always open to connect"
+              : "Siempre dispuesto a conectar"}
+          </h2>
         </div>
         <div className="flex flex-col sm:grid sm:grid-cols-2 gap-3">
           {/* MAIL */}
@@ -27,7 +36,12 @@ function Contact() {
             {/* icons */}
             <div className="grid grid-cols-2">
               <IoMdMail className="size-6" />
-              <button onClick={copyText} title="Copy" className="justify-self-end cursor-pointer">
+              <button
+                onClick={copyText}
+                title={locale === "en" ? "Copy email" : "Copiar email"}
+                aria-label={locale === "en" ? "Copy email" : "Copiar email"}
+                className="justify-self-end cursor-pointer"
+              >
                 <FaRegCopy className="size-6 active:size-5 duration-75" />
               </button>
             </div>
@@ -42,7 +56,12 @@ function Contact() {
             {/* icons */}
             <div className="grid grid-cols-2">
               <FaLinkedin className="size-6" />
-              <Link href="https://www.linkedin.com/in/cristian-ser/" target="_blank" className="justify-self-end" title="Go to linkedin">
+              <Link
+                href="https://www.linkedin.com/in/cristian-ser/"
+                target="_blank"
+                className="justify-self-end"
+                title={locale === "en" ? "Go to LinkedIn" : "Ir a LinkedIn"}
+              >
                 <FaExternalLinkAlt className="size-5" />
               </Link>
             </div>

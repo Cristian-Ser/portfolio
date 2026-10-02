@@ -1,8 +1,11 @@
 "use client";
 import Link from "next/link";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { useLanguage } from "./LanguageProvider";
 
 function Hero() {
+  const { locale } = useLanguage();
+
   const scrollToProject = () => {
     document.getElementById("project")?.scrollIntoView({ behavior: "smooth" });
   };
@@ -17,12 +20,26 @@ function Hero() {
         {/* Text */}
         <div className="flex flex-col gap-2">
           <h1 className="text-6xl font-black">Cristian Serrón</h1>
-          <p className="text-lg font-semibold">(Javascript Full-Stack Developer)</p>
-          <p className="text-balance">
-            I’m a frontend-focused full-stack developer who builds web applications with React and Next.js. Alongside frontend development, I have hands-on experience building backend functionality with Express and Next.js Server Actions, as well as working with relational and non-relational databases.
-
+          <p className="text-lg font-semibold">
+            {locale === "en"
+              ? "(JavaScript Full-Stack Developer)"
+              : "(Desarrollador Full-Stack de JavaScript)"}
           </p>
-          <p className="text-sm"><span className="font-semibold">🌎 Languages I speak:</span> Spanish(Native) & English</p>
+          <p className="text-balance">
+            {locale === "en"
+              ? "I’m a frontend-focused full-stack developer who builds web applications with React and Next.js. Alongside frontend development, I have hands-on experience building backend functionality with Express and Next.js Server Actions, as well as working with relational and non-relational databases."
+              : "Soy un desarrollador full-stack enfocado en frontend y creo aplicaciones web con React y Next.js. Además del desarrollo frontend, tengo experiencia práctica creando funcionalidades backend con Express y Server Actions de Next.js, y trabajando con bases de datos relacionales y no relacionales."}
+          </p>
+          <p className="text-sm">
+            <span className="font-semibold">
+              {locale === "en"
+                ? "🌎 Languages I speak:"
+                : "🌎 Idiomas que hablo:"}
+            </span>{" "}
+            {locale === "en"
+              ? "Spanish (native) & English"
+              : "Español (nativo) e inglés"}
+          </p>
         </div>
         {/* Buttons-Links */}
         <div className="flex items-center justify-start gap-3">
@@ -31,7 +48,7 @@ function Hero() {
             className="px-6 py-3 bg-accent text-white rounded-lg cursor-pointer hover:-translate-y-0.5 duration-300"
             onClick={scrollToProject}
           >
-            View Projects
+            {locale === "en" ? "View Projects" : "Ver proyectos"}
           </button>
           {/* GitHub */}
           <Link href="https://github.com/Elix-lab" target="_blank">

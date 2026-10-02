@@ -1,6 +1,10 @@
 "use client";
 
+import { useLanguage } from "./LanguageProvider";
+
 function Header() {
+  const { locale, toggleLocale } = useLanguage();
+
   const handleScroll = (id: string) => {
     return document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
   };
@@ -9,7 +13,7 @@ function Header() {
   };
   return (
     <header className="z-100 sticky top-0 bg-background/80 backdrop-blur-3xl border-b">
-      <div className="grid grid-col-3 max-w-3xl mx-auto p-4 items-center">
+      <div className="grid grid-cols-3 max-w-3xl mx-auto p-4 items-center">
         {/* logo */}
         <button
           className="col-start-1 text-left font-black cursor-pointer"
@@ -25,7 +29,7 @@ function Header() {
                 className="cursor-pointer"
                 onClick={() => handleScroll("skills")}
               >
-                Skills
+                {locale === "en" ? "Skills" : "Habilidades"}
               </button>
             </li>
             {/* Project */}
@@ -34,7 +38,7 @@ function Header() {
                 className="cursor-pointer"
                 onClick={() => handleScroll("project")}
               >
-                Project
+                {locale === "en" ? "Project" : "Proyectos"}
               </button>
             </li>
             {/* About */}
@@ -43,15 +47,28 @@ function Header() {
                 className="cursor-pointer"
                 onClick={() => handleScroll("about")}
               >
-                About
+                {locale === "en" ? "About" : "Sobre mí"}
               </button>
             </li>
           </ul>
         </nav>
-        {/* get in touch */}
-        <button className="col-start-3 justify-self-end py-2 px-3 bg-accent text-white rounded-lg cursor-pointer hover:-translate-y-0.5 duration-300 text-sm font-semibold" onClick={() => handleScroll('contact')}>
-          Get in touch
-        </button>
+        <div className="col-start-3 justify-self-end flex items-center gap-2">
+          <button
+            className="py-2 px-3 border rounded-lg cursor-pointer text-sm font-semibold hover:-translate-y-0.5 duration-300"
+            onClick={toggleLocale}
+            aria-label={
+              locale === "en" ? "Cambiar a español" : "Switch to English"
+            }
+          >
+            {locale === "en" ? "ES" : "EN"}
+          </button>
+          <button
+            className="py-2 px-3 bg-accent text-white rounded-lg cursor-pointer hover:-translate-y-0.5 duration-300 text-sm font-semibold"
+            onClick={() => handleScroll("contact")}
+          >
+            {locale === "en" ? "Get in touch" : "Contactarme"}
+          </button>
+        </div>
       </div>
     </header>
   );
