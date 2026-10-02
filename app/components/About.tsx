@@ -7,28 +7,15 @@ function About() {
       <div className="flex flex-col justify-center gap-5 max-w-3xl mx-auto px-4 py-10 min-h-100">
         <span className="text-base font-bold text-gray-500">ABOUT</span>
         <p>
-          I started with a foundation in React and Next.js. I had learned the
-          concepts and theory, but I hadn’t really applied them in a real
-          project before.
+          I enjoy turning ideas into real, functional applications and learning
+          by building. My projects have taken me from focusing mainly on
+          interfaces to understanding how the different parts of an application
+          connect behind the scenes.
           <br />
-          With Cashwell, that changed. I already had the idea of a personal
-          finance tracker, but I started by building it just as a UI mockup,
-          because that was the only thing I was comfortable with at the time.
-          <br />
-          After finishing the UI, I decided to move into something I didn’t
-          really know yet... backend development: server-side logic,
-          authentication, database integration, and everything related to that
-          side.
-          <br />
-          That’s how I started implementing those concepts, which eventually led
-          to Cashwell be the full-stack application it is today.
-          <br />
-          Right now, I’m still learning more about the technologies I’ve already
-          used in the project, and I’m also going deeper into backend
-          development because I want to understand how things really work.
-          <br />
-          The goal is to understand how everything connects and how to design
-          better applications end to end.
+          I’m particularly interested in understanding how things work under the
+          hood rather than simply making them work. I’m constantly improving my
+          skills through hands-on projects, exploring new technologies, and
+          looking for better ways to build reliable and intuitive software.
         </p>
       </div>
     </section>

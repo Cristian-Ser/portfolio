@@ -17,11 +17,10 @@ function Hero() {
         {/* Text */}
         <div className="flex flex-col gap-2">
           <h1 className="text-6xl font-black">Cristian Serrón</h1>
-          <p className="text-xl font-semibold">(Next.js/React)</p>
+          <p className="text-lg font-semibold">(Javascript Full-Stack Developer)</p>
           <p className="text-balance">
-            I build web applications with React and Next.js, focusing on frontend and user
-            experience while expanding my knowledge of backend development and
-            modern web technologies.
+            I’m a frontend-focused full-stack developer who builds web applications with React and Next.js. Alongside frontend development, I have hands-on experience building backend functionality with Express and Next.js Server Actions, as well as working with relational and non-relational databases.
+
           </p>
           <p className="text-sm"><span className="font-semibold">🌎 Languages I speak:</span> Spanish(Native) & English</p>
         </div>
@@ -32,7 +31,7 @@ function Hero() {
             className="px-6 py-3 bg-accent text-white rounded-lg cursor-pointer hover:-translate-y-0.5 duration-300"
             onClick={scrollToProject}
           >
-            View Project
+            View Projects
           </button>
           {/* GitHub */}
           <Link href="https://github.com/Elix-lab" target="_blank">
